@@ -3,7 +3,7 @@
 
 const getContact = (req,res)=>{res.status(200).json({"message":"get all contacts"})};
 
-const postContact = (req, res) => { res.status(200).json({ "message": `created contact ${req.body.wow}` }) };
+const postContact = (req, res) => { res.status(200).json({ "message": `created contact ${req.body.name}` }) };
 
 const putContact = (req, res) => { res.status(200).json({ "message": `updated for ${req.params.id}` }) };
 

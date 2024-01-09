@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+//middleware function 08-01-2024
+app.use((req,res,next)=>{console.log(req.url,req.method,Date.now()),next()});
+
 const dotenv = require('dotenv').config()
 
 const port = process.env.PORT || 3000 ;
