@@ -5,6 +5,10 @@ const { getContact, putContact, postContact, deleteContact } = require('../contr
 const router = express.Router();
 
 
+//router level middleware
+router.use((req,res,next)=>{console.log("Router middlware included")});
+
+
 // same routes varumbho chain reethiyill ezhutham 
 
 router.route('/').get(getContact).post(postContact);
