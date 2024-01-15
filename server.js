@@ -1,9 +1,15 @@
 
 const express = require('express');
 const app = express();
+
+//data base 
+const connectDb = require('./config/dbCollection');
+
 const contactRouter = require('./Routes/contactRouter');
 const dotenv = require('dotenv').config()
 const port = process.env.PORT || 3000 ;
+connectDb();
+
 
 app.use(express.json());
 
