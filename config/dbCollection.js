@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 // connecting db
 const connectDb = async () => {
     try {
-        const connect = await mongoose.connect(`mongodb+srv://megatp12345:Meghamegha11@meghatp.1esebie.mongodb.net/?retryWrites=true&w=majority/firstDB`);
+        const connect = await mongoose.connect(`mongodb+srv://meghatp12345:Meghamegha11@meghatp.1esebie.mongodb.net/?retryWrites=true&w=majority`);
         console.log("DB connected",
             connect.connection.host
             , connect.connection.name);

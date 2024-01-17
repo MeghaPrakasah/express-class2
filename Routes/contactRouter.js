@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 //router level middleware
-router.use((req,res,next)=>{console.log("Router middlware included")});
+router.use((req,res,next)=>{console.log("Router middlware included"),next()});
 
 
 // same routes varumbho chain reethiyill ezhutham 
